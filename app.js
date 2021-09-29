@@ -17,22 +17,19 @@ app.use( express.static('public'));
 app.get( '/', (req, res) => {
     // segundo argumento de render son las opciones, todas las cosas que se quieren mandar como argumentos
     res.render('home', { 
-        name: 'Francisco',
-        title: 'Curso de Node'
+        title: 'Web ejemplo'
     }); // renderizado de handlebars
 });
 
 app.get( '/generic', (req, res) => {
     res.render('generic', {
-        name: 'Francisco',
-        title: 'Curso de Node'
+        title: 'Web ejemplo'
     });
 });
 
 app.get( '/elements', (req, res) => {
     res.render('elements', {
-        name: 'Francisco',
-        title: 'Curso de Node'
+        title: 'Web ejemplo'
     });
 });
 
